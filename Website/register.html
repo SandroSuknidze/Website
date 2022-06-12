@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="trans20">Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/BTU.png">
+</head>
+<body>
+    <div class="header">
+        <input onclick="changeLanguage('geo')" type="image" src="Images/Georgia.png" height="15px" width="25px" id="geo">
+        <input onclick="changeLanguage('eng')" type="image" src="Images/USA.png" height="15px" width="25px" id="usa">
+    </div>
+    <div class="sec">
+        <div style="margin-top: 10px;">
+        <a href="home.html"><img src="Images/BTU.png" height="40px" id="p"></a>
+        </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="home.html" id="trans1">Home</a></li>
+                    <li><a href="study.html" id="trans2">Study</a></li>
+                    <li><a href="library.html" id="trans3">Library</a></li>
+                    <li><a href="about.html" id="trans4">About</a></li>
+                    <li><a href="Contact.html" id="trans5">Contact</a></li>
+                    
+                </ul>
+                
+            </div>
+            <div class="buttons">
+                <a href="login.html" class="bt btn" id="trans6">Login</a>
+                <a href="register.html" class="bt btn" id="trans7" >Sign Up</a>
+            </div>
+    </div>
+
+    
+
+
+    <section class="container">
+        <form class="form" name="form1">
+            <div class="df">
+                <div class="formlayer">
+                    
+                    <div style="display: flex; justify-content: space-between; ">
+                    <div class="form_label" id="trans10">Email</div>
+                    <p id="tx" class="error" >Credentials are incorrect.</p>
+                    </div>
+                    
+                    <input type="text" class="forminput" id="inp1">
+                    
+                </div>
+                <div class="formlayer">
+                    <div style="display: flex; justify-content: space-between; ">
+                        <div class="form_label" id="trans11">Password</div>
+                        <p id="tx2" class="pw"></p>
+                        </div>
+                    
+                    <input type="password" class="forminput" name="formPass" id="ps">
+                </div>
+                <div class="formlayer">
+                    <div style="display: flex; justify-content: space-between; ">
+                        <div class="form_label" id="trans12">Repeat The Password</div>
+                        <p id="tx1" class="error2" >Password doesn't match</p>
+                        </div>
+                    <input type="password" class="forminput" name="formPass2" id="ps2">
+                </div>
+                <div class="formlayer">
+                    <div class="form_label" id="trans13">Registration Date</div>
+                    <input type="date" class="forminput dt" id="start" value="" name="trip-start">
+                </div>
+                <div class="formlayer">
+                    <div class="form_label" id="trans14">Name</div>
+                    <input type="text" class="forminput">
+                </div>
+                <div class="formlayer">
+                    <div class="form_label" id="trans15">Country</div>
+                    <input type="text" class="forminput">
+                </div>
+                <div class="formlayer">
+                    <div class="form_label" id="trans16">City</div>
+                    <input type="text" class="forminput">
+                </div>
+                <div class="formlayer">
+                    <div class="form_label" id="trans17">Phone Number</div>
+                    <input type="number" class="forminput">
+                </div>
+                <button class="form_submit" type="button" onclick="checkmail()" id="trans18">Register</button>
+            </div>
+        </form>
+        
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <p id="trans8" style="color: white; text-align: center;">The University of Business and Technology was founded on September 16, 2016.</p>
+        <br>
+        <p id="trans9" style="color: white; text-align: center;">Copyright © 2021 - BTU</p>
+    </footer>    
+    <script src="jsREGISTER.js"></script>
+</body>
+</html>
